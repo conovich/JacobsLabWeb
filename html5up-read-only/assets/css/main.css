@@ -2573,8 +2573,8 @@
 /* One */
 
 	#one:before {
-		background-image: url("../../images/banner.jpg");
-		background-position: top right;
+		background-image: url("../../images/gridCellCover.jpg");
+		background-position: 0% 70%;
 		background-repeat: no-repeat;
 		background-size: cover;
 		content: '';
