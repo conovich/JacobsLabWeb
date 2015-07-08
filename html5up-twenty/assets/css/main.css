@@ -1810,6 +1810,19 @@
 				display: block;
 				width: 100%;
 			}
+			
+		.image.avatar {
+			border-radius: 100%;
+		}
+
+			.image.avatar:before {
+				display: none;
+			}
+
+			.image.avatar img {
+				border-radius: 100%;
+				width: 40%;
+			}
 
 /* Icon */
 
@@ -2395,10 +2408,10 @@
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
-		background-position: bottom left, bottom right, top left, top center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
+		background-image: /*url("images/light-bl.svg"), url("images/light-br.svg"),*/ url("images/overlay.png"), url("../../images/banner.jpg");
+		background-position: /*bottom left, bottom right,*/ top left, top center;
+		background-repeat: /*no-repeat, no-repeat,*/ repeat, no-repeat;
+		background-size: /*25em, 25em,*/ auto, cover;
 		color: #fff;
 		cursor: default;
 		padding: 6em 0;
@@ -2461,7 +2474,7 @@
 /* Main */
 
 	#main {
-		background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
+		/*background-image:*/ /*url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");*/
 		background-position: top left, top right, bottom left, bottom right;
 		background-repeat: no-repeat;
 		background-size: 25em;
@@ -2493,10 +2506,10 @@
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
-		background-position: top left, top right, top left, bottom center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
+		background-image: /*url("images/light-tl.svg"), url("images/light-tr.svg"), */url("images/overlay.png"), url("../../images/banner.jpg");
+		background-position: /*top left, top right,*/ top left, bottom center;
+		background-repeat: /*no-repeat, no-repeat,*/ repeat, no-repeat;
+		background-size: /*25em, 25em,*/ auto, cover;
 		color: #fff;
 		padding: 5em;
 		text-align: center;
