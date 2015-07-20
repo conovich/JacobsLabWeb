@@ -12,6 +12,25 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+	    <script type="text/javascript">
+	    	function TurnOnMain() {
+    			$('#main').show();
+    			$('#publicationsMain').hide();
+			    $('#researchMain').hide();
+    		}
+	    	function TurnOnResearch() {
+    			$('#main').hide();
+    			$('#publicationsMain').hide();
+			    $('#researchMain').show();
+    		}
+    		function TurnOnPublications() {
+    			$('#main').hide();
+    			$('#publicationsMain').show();
+			    $('#researchMain').hide();
+    		}
+	    </script>
+
 	</head>
 	<body id="top">
 
@@ -24,11 +43,11 @@
 				
 				<br />
 				
-				<h1><a href="#">Home</a></h1>
-				<h1><a href="#research">Research</a></h1>
-				<h1><a href="#publications">Publications</a></h1>
-				<h1><a href="#people">People</a></h1>
-				<h1><a href="#contact">Contact</a></h1>
+				<h1><a href="#" onclick="TurnOnMain()">Overview</a></h1>
+				<h1><a href="#research" onclick="TurnOnMain()">Research</a></h1>
+				<h1><a href="#publications" onclick="TurnOnMain()">Publications</a></h1>
+				<h1><a href="#people" onclick="TurnOnMain()">People</a></h1>
+				<h1><a href="#contact" onclick="TurnOnMain()">Contact</a></h1>
 			</header>
 
 		<!-- Main -->
@@ -44,15 +63,18 @@
 				<!-- research -->
 					<section id="research">
 						<h2>Research</h2>
+						<!-- FULL RESEARCH PAGE IN THE DIV ENTITLED: researchMain -->
 						<p>The goal of our work is to characterize the neural signals that represent individual memories. To do this, we study brain recordings from epilepsy patients with implanted electrodes and examine how the recorded signals correspond to behavior in cognitive tasks. Our current work focuses on two areas: spatial and recognition memory. Using this approach, we have identified neural signals that represent specific memory information, including the individual locations in spatial memory and representations of individual verbal items in working memory.</p>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="#" class="button" onclick="TurnOnResearch()">Learn More</a></li>
 						</ul>
 					</section>
 
 				<!-- publications -->
 					<section id="publications">
+						<!-- FULL PUBLICATIONS PAGE IN THE DIV ENTITLED: publicationsMain -->
 						<h2>Publications</h2>
+						<h3><em>Select Publications</em></h3>
 						<p> <b>Brain Computer Interface to Enhance Episodic Memory in Human Partipants</b> <br />
 						Burke, J.F., Merkow, M.B., Jacobs, J., Kahana, M.J., and Zaghloul, K.A. (2014). <br />
 						<em>Frontiers in Human Neuroscience, December 2014.</em> [<a href="">pdf</a>] </p>
@@ -61,41 +83,8 @@
 						Ritaccio, A., Brunner, P., Gunduz, A., Hermes, D., Hirsch, L., Jacobs, J., Kamada, K., Kastner, S., Knight, R., Lesser, R., Miller, K., Sejnowski, T., Worrell, G., Schalk, G. (2014). <br />
 						<em>Epilepsy & Behavior, 41, December 2014, 183-192.</em> [<a href="">pdf</a>] </p>
 						
-						<!--<div class="row">
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>Magna sed consequat tempus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>Ultricies lacinia interdum</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Tortor metus commodo</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Quam neque phasellus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Nunc enim commodo aliquet</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Risus ornare lacinia</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-						</div> 
-						-->
 						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
+							<li><a href="#" class="button" onclick="TurnOnPublications()">View All Publications</a></li>
 						</ul>
 					</section>
 
@@ -106,67 +95,108 @@
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
 								<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-								<h3>Magna sed consequat tempus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+								<h3>Josh Jacobs</h3>
+								<p>Lab Director. </p>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
 								<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-								<h3>Ultricies lacinia interdum</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+								<h3>Tom Coffey</h3>
+								<p>Job Title</p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+								<h3>Hagai Lalazar</h3>
+								<p>Job Title</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+								<h3>Sang Ah Lee</h3>
+								<p>Job Title</p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+								<h3>Jonathan Miller</h3>
+								<p>Job Title</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+								<h3>Corey Novich</h3>
+								<p>Job Title</p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+								<h3>Andrew Watrous</h3>
+								<p>Job Title</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+								<h3>Honghui Zhang</h3>
+								<p>Job Title</p>
 							</article>
 						</div>
+
+
 						<h3><em>Collaborators</em></h3>
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-								<h3>Magna sed consequat tempus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+								<h3>Dr. Michael Kahana</h3>
+								<p>University of Pennsylvania</p>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-								<h3>Ultricies lacinia interdum</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+								<h3>Dr. Michael Sperling</h3>
+								<p>Thomas Jefferson University</p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<h3>Dr. Ashwini Sharan</h3>
+								<p>Thomas Jefferson University</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<h3>Dr. Joseph Tracy</h3>
+								<p>Thomas Jefferson University</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<h3>Dr. Itzhak Fried</h3>
+								<p>UCLA</p>
 							</article>
 						</div>
+
 						<h3><em>Lab Alumni</em></h3>
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-								<h3>Magna sed consequat tempus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+								<h3>Shady El Damaty</h3>
+								<p>Put something here?</p>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-								<h3>Ultricies lacinia interdum</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+								<h3>Anna Merzagora</h3>
+								<p>Put something here?</p>
 							</article>
 						</div>
 					</section>
 
 				<!-- contact -->
 					<section id="contact">
-						<h2>Get In Touch</h2>
-						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
-						<div class="row">
-							<div class="8u 12u$(small)">
+						<h2>Contact</h2>
+						<!-- <div class="row">
+							 <div class="8u 12u$(small)">
 								<form method="post" action="#">
 									<div class="row uniform 50%">
 										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
 										<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
 										<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 									</div>
-								</form>
+								</form> 
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" /></li>
 								</ul>
-							</div>
-							<div class="4u$ 12u$(small)">
+							</div> -->
+							<!-- <div class="4u$ 12u$(small)"> -->
+							<div>
 								<ul class="labeled-icons">
 									<li>
-										<h3 class="icon fa-home"><span class="label">Address</span></h3>
-										1234 Somewhere Rd.<br />
-										Nashville, TN 00000<br />
-										United States
+										<h3 class="icon fa-home" align="center"><span class="label">Address</span></h3>
+										500 W. 120th Street, ET351, MC8904 <br />
+										New York, NY<br />
+										10027
 									</li>
 									<li>
 										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
@@ -174,343 +204,157 @@
 									</li>
 									<li>
 										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-										<a href="#">hello@untitled.tld</a>
+										<a href="#">joshua.jacobs@columbia.edu</a>
 									</li>
 								</ul>
 							</div>
 						</div>
 					</section>
 
-				<!-- Four -->
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
+			</div>
 
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
+			<div id="researchMain">
+				<section id="allResearch" style="display: none;">
+					<h1>Research: MORE DETAILS HERE</h1>
+					<p>The goal of our work is to characterize the neural signals that represent individual memories. To do this, we study brain recordings from epilepsy patients with implanted electrodes and examine how the recorded signals correspond to behavior in cognitive tasks. Our current work focuses on two areas: spatial and recognition memory. Using this approach, we have identified neural signals that represent specific memory information, including the individual locations in spatial memory and representations of individual verbal items in working memory.</p>
+				</section>
+			</div>
 
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
+			<div id="publicationsMain" style="display: none;">
+				<section id="allPublications">
+					<!-- FULL PUBLICATIONS PAGE IN THE DIV ENTITLED: publicationsMain -->
+					<h1>Publications</h1>
+					
+					<h2><em>2015</em></h2>
+					
+						<p> <b>Repeating Spatial Activations in Human Entorhinal Cortex.</b> <br />
+						Miller, J.F., Fried, I., Suthana, N., Jacobs, J. (2015). <br />
+						<em>Current Biology</em>, April 2015, 1080-1085. [<a href="">pdf</a>] </p>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
+					<h2><em>2014</em></h2>
 
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="6u 12u$(xsmall)">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="6u$ 12u$(xsmall)">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button special">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button special small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="6u 12u$(small)">
-									<ul class="actions vertical">
-										<li><a href="#" class="button special">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="6u$ 12u$(small)">
-									<ul class="actions vertical small">
-										<li><a href="#" class="button special small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="6u 12u$(small)">
-									<ul class="actions vertical">
-										<li><a href="#" class="button special fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="6u$ 12u$(small)">
-									<ul class="actions vertical small">
-										<li><a href="#" class="button special small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
+						<p> <b>Brain Computer Interface to Enhance Episodic Memory in Human Partipants</b> <br />
+						Burke, J.F., Merkow, M.B., Jacobs, J., Kahana, M.J., and Zaghloul, K.A. (2014). <br />
+						<em>Frontiers in Human Neuroscience</em>, December 2014. [<a href="">pdf</a>] </p>
+						
+						<p> <b>Proceedings of the Fifth International Workshop on Advances in Electrocorticography</b> <br />
+						Ritaccio, A., Brunner, P., Gunduz, A., Hermes, D., Hirsch, L., Jacobs, J., Kamada, K., Kastner, S., Knight, R., Lesser, R., Miller, K., Sejnowski, T., Worrell, G., Schalk, G. (2014). <br />
+						<em>Epilepsy & Behavior</em>, 41, December 2014, 183-192. [<a href="">pdf</a>] </p>
 
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
+						<p> <b>Methods for implantation of micro-wire bundles and optimization of single/multi-unit recordings from human mesial temporal lobe.</b> <br />
+						Misra, A., Burke, J.F., Ramayya, A., Jacobs, J., Sperling, M.R., Moxon, K.A., Kahana, M.J., Evans, J.J., and Sharan, A.D. (2014). <br />
+						<em>Journal of Neural Engineering</em>, 11(2), 026013. [<a href="">pdf</a>] </p>
 
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
+						<p> <b>Hippocampal theta oscillations are slower in humans than in rodents: Implications for models of spatial navigation and memory.</b> <br />
+						Jacobs, J. (2014). <br />
+						<em>Philosophical Transactions of the Royal Society B</em>, 369: 20130304. [<a href="">pdf</a>] </p>
 
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button special">Special</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button big">Big</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button special fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button special fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button special icon fa-download">Icon</a></li>
-								<li><a href="#" class="button icon fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button special disabled">Special</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
 
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row uniform 50%">
-									<div class="6u 12u$(xsmall)">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="6u$ 12u$(xsmall)">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="12u$">
-										<div class="select-wrapper">
-											<select name="demo-category" id="demo-category">
-												<option value="">- Category -</option>
-												<option value="1">Manufacturing</option>
-												<option value="1">Shipping</option>
-												<option value="1">Administration</option>
-												<option value="1">Human Resources</option>
-											</select>
-										</div>
-									</div>
-									<div class="4u 12u$(small)">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="4u 12u$(small)">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="4u$ 12u(small)">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="6u 12u$(small)">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="6u$ 12u$(small)">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="12u$">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="12u$">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="special" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
+					<h2><em>2013</em></h2>
 
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row 50% uniform">
-									<div class="12u$"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="4u$"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="4u$"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="4u$"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
+						<p> <b>Neural activity in human hippocampal formation reveals the spatial context of retrieved memories.</b> <br />
+						Miller, J.F., Neufang, M., Solway, A., Brandt, A., Trippel, M., Mader, I., Polyn, S.M., Jacobs, J., Kahana, M.J., Schulze-Bonhage, A. (2013) . <br />
+						<em>Science</em>, 342(6162), 1111-1114. [<a href="">pdf</a>, <a href="">Supplemental</a>] </p>
+						
+						<p> <b>Direct recordings of grid-like neuronal activity in human spatial navigation.</b> <br />
+						Jacobs, J., Weidemann, C.T., Miller, J.F., Solway, A., Burke, J.F., Wei, X., Suthana, N., Sperling, M.R., Sharan, A.D., Fried, I., Kahana, M.J. (2013). <br />
+						<em>Nature Neuroscience</em>, 16, 1188-1190. [<a href="">pdf</a>, <a href="">Supplemental</a>, <a href="">Task Movie</a>] </p>
 
-					</section>
-				-->
+						<p> <b>Repeated stimuli elicit diminished high-gamma electrocorticographic responses.</b> <br />
+						Merzagora, A.R., Coffey, T.J, Sperling, M., Sharan, A., Litt., B, Baltuch, G., Jacobs, J. (2013). <br />
+						<em>NeuroImage</em>. [<a href="">pdf</a>] </p>
 
+						<p> <b>Decoding the memorization of individual stimuli with direct human brain recordings.</b> <br />
+						van Gerven, M.A.J., Maris, E., Sperling, M., Sharan, A., Litt, B., Anderson, C., Baltuch, G., Jacobs, J (2013). <br />
+						<em>NeuroImage</em>, 70, 223-232. [<a href="">pdf</a>] </p>
+
+						<p> <b>Synchronous and asynchronous theta and gamma activity during episodic memory formation.</b> <br />
+						Burke, J.F., Zaghloul, K.A., Jacobs, J., Williams, R.B., Sperling, M.R., Sharan, A.D., Kahana., M.J. (2013). <br />
+						<em>Journal of Neuroscience</em>, 33(1), 292-304. [<a href="">pdf</a>] </p>
+
+					<h2><em>2012</em></h2>
+
+						<p> <b>Explaining how brain stimulation can evoke memories.</b> <br />
+						Jacobs, J., Lega, B., Anderson, C. (2012). <br />
+						<em>Journal of Cognitive Neuroscience</em>, 24(3), 553-563. [<a href="">pdf</a>] </p>
+
+						<p> <b>Human hippocampal theta oscillations and the formation of episodic memories.</b> <br />
+						Lega, B., Jacobs, J, Kahana, M., (2012). <br />
+						<em>Hippocampus</em>, 22(4), 748-761. [<a href="">pdf</a>] </p>
+
+					<h2><em>2011</em></h2>
+
+						<p> <b>Spurious report of high-frequency electrocorticographic oscillations. [Electronic response to Nonuniform High-Gamma (60--500 Hz) Power Changes Dissociate Cognitive Task and Anatomy in Human Cortex., Gaona et al.]</b> <br />
+						Jacobs, J., Miller, K., Edwards, E., Voytek, B. (2011). <br />
+						<em>Journal of Neuroscience</em>, Published online Feb. 28, 2011. [<a href="">Link</a>] </p>
+
+					<h2><em>2010</em></h2>
+
+						<p> <b>Response to Miller: Broadband vs. high gamma electrocorticographic signals.</b> <br />
+						Jacobs, J., Manning, J.R., Kahana, M.J. (2010). <br />
+						<em>Journal of Neuroscience</em>,30, Published online. [<a href="">Link</a>] </p>
+
+						<p> <b>A sense of direction in human entorhinal cortex.</b> <br />
+						Jacobs, J., Kahana, M.J., Ekstrom, A.D., Mollison, M., & Fried, I. (2010). <br />
+						<em>Proceedings of the National Academy of Sciences</em>, 107(14), 6487 – 6492. [<a href="">pdf</a>, <a href="">Supplemental</a>, <a href="">Movie</a>] </p>
+
+						<p> <b>Direct brain recordings fuel advances in cognitive electrophysiology.</b> <br />
+						Jacobs, J., Kahana, M.J. (2010). <br />
+						<em>Trends in Cognitive Sciences</em>, 14(4), 162 – 171. [<a href="">pdf</a>] </p>
+
+						<p> <b>Right-lateralized brain oscillations in human spatial navigation.</b> <br />
+						Jacobs, J.,∗ Korolev, I.O.,∗ Caplan, J.B., Ekstrom, A.D., Litt, B., Baltuch, G., Fried, I., Schulze-Bonhage, A., Madsen, J. R., & Kahana, M.J. (2010). <br />
+						<em>Journal of Cognitive Neuroscience</em>, 22(5), 824 – 836. (∗ equal contributions.) [<a href="">pdf</a>] </p>
+
+					<h2><em>2009</em></h2>
+
+						<p> <b>Broadband shifts in LFP power spectra are correlated with single-neuron activity in humans.</b> <br />
+						Manning, J.R., Jacobs, J., Fried, I., & Kahana, M.J. (2009). <br />
+						<em>Journal of Neuroscience</em>, 29(43), 13613 – 3620. [<a href="">pdf</a>] </p>
+
+						<p> <b>Neural representations of individual stimuli revealed by gamma-band electrocorticographic activity.</b> <br />
+						Jacobs, J., & Kahana, M.J. (2009). <br />
+						<em>Journal of Neuroscience</em>, 29(33), 10203 – 10214. [<a href="">pdf</a>] </p>
+
+					<h2><em>2007</em></h2>
+
+						<p> <b>PyEPL: A cross-platform experiment-programming library.</b> <br />
+						Geller, A.S., Schleifer, I.K., Sederberg, P.B., Jacobs, J., & Kahana, M.J. (2007). <br />
+						<em>Behavior Research Methods</em>, 39(4), 950 – 958. [<a href="">pdf</a>] </p>
+
+						<p> <b>Contrasting roles of single neuron activity and local field potentials in human memory.</b> <br />
+						Ekstrom, A., Viskontas, I., Kahana, M.J., Jacobs, J., Upchurch, K., Bookheimer, S., & Fried, I. (2007). <br />
+						<em>Hippocampus</em>, 17(8), 606 – 17. [<a href="">pdf</a>] </p>
+
+						<p> <b>Brain oscillations control timing of single-neuron activity in humans.</b> <br />
+						Jacobs, J., Kahana, M.J., Ekstrom, A.D. & Fried, I. (2007). <br />
+						<em>Journal of Neuroscience</em>, 27(14), 3839 – 3844. [<a href="">pdf</a>] </p>
+
+					<h2><em>2006 and Earlier</em></h2>
+
+						<p> <b>EEG oscillations and recognition memory: Theta correlates of memory retrieval and decision making.</b> <br />
+						Jacobs, J., Hwang-Grodzins, G., Curran, T., & Kahana, M.J. (2006). <br />
+						<em>NeuroImage</em>, 32, 978 – 987. [<a href="">pdf</a>] </p>
+
+						<p> <b>EEG correlates of verbal and nonverbal working memory.</b> <br />
+						Hwang-Grodzins, G., Jacobs, J., Geller, A., Danker, J., Sekuler, R., & Kahana, M.J. (2005). <br />
+						<em>Behavioral and Brain Functions</em>, 1 – 20. [<a href="">pdf</a>] </p>
+
+						<p> <b>Inter-response times in serial recall: Effects of intraserial repetition.</b> <br />
+						Kahana, M.J. & Jacobs, J. (2000). <br />
+						<em>Journal of Experimental Psychology: Learning, Memory and Cognition</em>, 26, 1188 – 1197. [<a href="">pdf</a>] </p>
+
+				</section>
 			</div>
 
 		<!-- Footer -->
 			<footer id="footer">
-				<ul class="icons">
+				<!-- <ul class="icons">
 					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
 					<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
 					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-				</ul>
+				</ul> -->
 				<ul class="copyright">
 					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
