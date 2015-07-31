@@ -2088,7 +2088,8 @@
 
 			.image.avatar img {
 				border-radius: 100%;
-				width: 100%;
+				width: 123px;
+				height: 123px;
 			}
 
 /* List */
@@ -2554,7 +2555,7 @@
 	}
 
 	#publicationsMain, #researchMain {
-		margin-left: 35%;
+		margin-left: 29%;
 		max-width: 54em;
 		padding: 4em 4em 4em 4em;
 		width: calc(100% - 35%);
