@@ -21,18 +21,21 @@
 				$('#mediaMain').hide();
     		}
 	    	function TurnOnResearch() {
+				$('body').scrollTop(0);
     			$('#main').hide();
     			$('#publicationsMain').hide();
 			    $('#researchMain').show();
 				$('#mediaMain').hide();
     		}
     		function TurnOnPublications() {
+				$('body').scrollTop(0);
     			$('#main').hide();
     			$('#publicationsMain').show();
 			    $('#researchMain').hide();
 				$('#mediaMain').hide();
     		}
 			function TurnOnMedia() {
+				$('body').scrollTop(0);
     			$('#main').hide();
     			$('#publicationsMain').hide();
 			    $('#researchMain').hide();
@@ -49,7 +52,7 @@
 				
 				<h1><a href="#" onclick="TurnOnMain()">Overview</a></h1>
 				<!--<h1><a href="#research" onclick="TurnOnMain()">Research</a></h1>-->
-				<h1><a href="#publications" onclick="TurnOnMain()">Publications</a></h1>
+				<h1><a href="#publications" onclick="TurnOnPublications()">Publications</a></h1>
 				<h1><a href="#media" onclick="TurnOnMain()">Media</a></h1>
 				<h1><a href="#people" onclick="TurnOnMain()">People</a></h1>
 				<h1><a href="#contact" onclick="TurnOnMain()">Contact</a></h1>
@@ -70,6 +73,30 @@
 							</table>
 							
 						</header>
+						
+						<div>
+	
+							<h3>Publications</h3>						
+							
+							<p> <b>Traveling Theta Waves in the Human Hippocampus</b> <br />
+							Zhang, H., Jacobs, J. (in press). <br />
+							<em>Journal of Neuroscience</em> (in press).[<a href="pubs/ZhangEtal15.pdf">pdf</a>] </p>
+	
+							<p> <b>Repeating Spatial Activations in Human Entorhinal Cortex.</b> <br />
+							Miller, J.F., Fried, I., Suthana, N., Jacobs, J. (2015). <br />
+							<em>Current Biology</em>, April 2015, 1080-1085. [<a href="pubs/MillEtal15.pdf">pdf</a>] </p>
+							
+							<p> <b>Direct recordings of grid-like neuronal activity in human spatial navigation.</b> <br />
+							Jacobs, J., Weidemann, C.T., Miller, J.F., Solway, A., Burke, J.F., Wei, X., Suthana, N., Sperling, M.R., Sharan, A.D., Fried, I., Kahana, M.J. (2013). <br />
+							<em>Nature Neuroscience</em>, 16, 1188-1190. [<a href="pubs/JacoEtal13.pdf">pdf</a>, <a href="pubs/JacoEtal13.Supplemental.pdf">Supplemental</a>, <a href="pubs/GridCells_movie.m4v">Task Movie</a>] </p>
+
+							
+							<ul class="actions">
+								<li><a href="#" class="button" onclick="TurnOnPublications()">View All Publications</a></li>
+							</ul>
+							
+						</div>
+						
 					</section>
 
 				<!-- research -->
@@ -83,9 +110,9 @@
 					</section>-->
 
 				<!-- publications -->
-					<section id="publications">
+					<!--<section id="publications">-->
 						<!-- FULL PUBLICATIONS PAGE IN THE DIV ENTITLED: publicationsMain -->
-						<h2>Publications</h2>
+						<!--<h2>Publications</h2>
 						<h3><em>Select Publications</em></h3>
 						
 						<p> <b>Traveling Theta Waves in the Human Hippocampus</b> <br />
@@ -107,7 +134,7 @@
 						<ul class="actions">
 							<li><a href="#" class="button" onclick="TurnOnPublications()">View All Publications</a></li>
 						</ul>
-					</section>
+					</section>-->
 					
 					<!-- Media -->
 					<section id="media">
