@@ -18,16 +18,25 @@
     			$('#main').show();
     			$('#publicationsMain').hide();
 			    $('#researchMain').hide();
+				$('#mediaMain').hide();
     		}
 	    	function TurnOnResearch() {
     			$('#main').hide();
     			$('#publicationsMain').hide();
 			    $('#researchMain').show();
+				$('#mediaMain').hide();
     		}
     		function TurnOnPublications() {
     			$('#main').hide();
     			$('#publicationsMain').show();
 			    $('#researchMain').hide();
+				$('#mediaMain').hide();
+    		}
+			function TurnOnMedia() {
+    			$('#main').hide();
+    			$('#publicationsMain').hide();
+			    $('#researchMain').hide();
+				$('#mediaMain').show();
     		}
 	    </script>
 
@@ -46,6 +55,7 @@
 				<h1><a href="#" onclick="TurnOnMain()">Overview</a></h1>
 				<h1><a href="#research" onclick="TurnOnMain()">Research</a></h1>
 				<h1><a href="#publications" onclick="TurnOnMain()">Publications</a></h1>
+				<h1><a href="#media" onclick="TurnOnMain()">Media</a></h1>
 				<h1><a href="#people" onclick="TurnOnMain()">People</a></h1>
 				<h1><a href="#contact" onclick="TurnOnMain()">Contact</a></h1>
 			</header>
@@ -56,7 +66,14 @@
 				<!-- Title Section -->
 					<section id="home">
 						<header class="major">
-							<h2>Josh Jacobs' <br/>COGNITIVE ELECTROPHYSIOLOGY LAB <br/> at <em>Columbia University</em></h2>
+							<table>
+								<tr>
+									<h2>Josh Jacobs' <br/>COGNITIVE ELECTROPHYSIOLOGY LAB <br/> at <em>Columbia University</em></h2>
+									<img src="images/YC1a_001.png" alt="YC1a" style="width:255px;height:191px;">
+									<img src="images/firingRateMap.jpg" alt="Firing Rate Map" style="width:440px;height:191px;">
+								</tr>
+							</table>
+							
 						</header>
 					</section>
 
@@ -94,6 +111,19 @@
 						
 						<ul class="actions">
 							<li><a href="#" class="button" onclick="TurnOnPublications()">View All Publications</a></li>
+						</ul>
+					</section>
+					
+					<!-- Media -->
+					<section id="media">
+						<!-- FULL MEDIA PAGE IN THE DIV ENTITLED: mediaMain -->
+						<h2>Media</h2>
+						<h3><em>Select Media</em></h3>
+						
+						<h3><a href = "http://www.npr.org/sections/health-shots/2015/11/04/454651329/the-brains-gps-may-also-help-us-map-our-memories"> Josh Jacobs on NPR's <em>All Things Considered</em> </a> </h3>
+						
+						<ul class="actions">
+							<li><a href="#" class="button" onclick="TurnOnMedia()">View All Media</a></li>
 						</ul>
 					</section>
 
@@ -178,11 +208,11 @@
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
 								<h3>Shady El Damaty</h3>
-								<p>Put something here?</p>
+								<p></p>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
 								<h3>Anna Merzagora</h3>
-								<p>Put something here?</p>
+								<p></p>
 							</article>
 						</div>
 					</section>
@@ -365,7 +395,21 @@
 
 				</section>
 			</div>
-
+			
+			<div id="mediaMain" style="display: none;">
+				<section id="allMedia">
+					<!-- FULL PUBLICATIONS PAGE IN THE DIV ENTITLED: publicationsMain -->
+					<h1>Media</h1>
+					
+					<h2><em>2015</em></h2>
+					
+						<h3><a href = "http://www.npr.org/sections/health-shots/2015/11/04/454651329/the-brains-gps-may-also-help-us-map-our-memories"> Josh Jacobs on NPR's <em>All Things Considered</em> </a> </h3>
+					
+					
+					<h2><em> More coming soon! </em></h2>
+				</section>
+			</div>
+						
 		<!-- Footer -->
 			<footer id="footer">
 				<!-- <ul class="icons">

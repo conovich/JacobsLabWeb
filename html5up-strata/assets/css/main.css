@@ -2554,7 +2554,7 @@
 		width: calc(100% - 35%);
 	}
 
-	#publicationsMain, #researchMain {
+	#publicationsMain, #researchMain, #mediaMain {
 		margin-left: 35%;
 		max-width: 54em;
 		padding: 4em 4em 4em 4em;
@@ -2578,6 +2578,12 @@
 			margin: 4em 0 0 0;
 			padding: 4em 0 0 0;
 		}
+		
+		#mediaMain > section {
+			border-top: solid 2px #efefef;
+			margin: 4em 0 0 0;
+			padding: 4em 0 0 0;
+		}
 
 			#main > section:first-child {
 				border-top: 0;
@@ -2592,6 +2598,12 @@
 			}
 
 			#researchMain > section:first-child {
+				border-top: 0;
+				margin-top: 0;
+				padding-top: 0;
+			}
+			
+			#mediaMain > section:first-child {
 				border-top: 0;
 				margin-top: 0;
 				padding-top: 0;
