@@ -2884,6 +2884,21 @@
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
+			
+			#header {
+				width: 28%;
+			}
+			
+			#footer {
+				width: 28%;
+			}
+			
+			#main {
+				margin-left: 30%;
+				max-width: none;
+				padding: 6em 3em 3em 3em;
+				width: calc(100% - 28%);
+			}
 
 	}
 
@@ -2895,7 +2910,7 @@
 
 			#header {
 				padding: 6em 3em 3em 3em;
-				width: 30%;
+				width: 28%;
 			}
 
 				#header h1 {
@@ -2909,8 +2924,8 @@
 		/* Footer */
 
 			#footer {
-				padding: 0 3em 5em 3em;
-				width: 30%;
+				padding: 6em 3em 3em 3em;
+				width: 28%;
 			}
 
 				#footer .copyright li {
@@ -2955,7 +2970,7 @@
 				background-position: top left, center center;
 				background-size: auto,		cover;
 				left: auto;
-				padding: 6em 4em;
+				padding: 3em 4em;
 				position: relative;
 				text-align: center;
 				top: auto;
