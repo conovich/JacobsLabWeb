@@ -2078,6 +2078,19 @@
 				width: 100%;
 			}
 
+		.image.paperThumb {
+			margin: 0 1em 0 0;
+		}
+
+			.image.paperThumb:before {
+				display: none;
+			}
+
+			.image.paperThumb img {
+				width: 100px;
+				height: 100px;
+			}
+
 		.image.avatar {
 			border-radius: 100%;
 		}
