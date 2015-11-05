@@ -2568,7 +2568,7 @@
 	}
 
 	#publicationsMain, #researchMain, #mediaMain {
-		margin-left: 35%;
+		margin-left: 29%;
 		max-width: 54em;
 		padding: 4em 4em 4em 4em;
 		width: calc(100% - 35%);
