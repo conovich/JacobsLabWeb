@@ -17,29 +17,29 @@
 	    	function TurnOnMain() {
     			$('#main').show();
     			$('#publicationsMain').hide();
-			    $('#researchMain').hide();
 				$('#mediaMain').hide();
-    		}
-	    	function TurnOnResearch() {
-				$('body').scrollTop(0);
-    			$('#main').hide();
-    			$('#publicationsMain').hide();
-			    $('#researchMain').show();
-				$('#mediaMain').hide();
+				$('#demosMain').hide();
     		}
     		function TurnOnPublications() {
 				$('body').scrollTop(0);
     			$('#main').hide();
     			$('#publicationsMain').show();
-			    $('#researchMain').hide();
 				$('#mediaMain').hide();
+				$('#demosMain').hide();
     		}
 			function TurnOnMedia() {
 				$('body').scrollTop(0);
     			$('#main').hide();
     			$('#publicationsMain').hide();
-			    $('#researchMain').hide();
 				$('#mediaMain').show();
+				$('#demosMain').hide();
+    		}
+			function TurnOnDemos() {
+				$('body').scrollTop(0);
+    			$('#main').hide();
+    			$('#publicationsMain').hide();
+				$('#mediaMain').hide();
+				$('#demosMain').show();
     		}
 	    </script>
 
@@ -48,12 +48,12 @@
 
 		<!-- Header -->
 			<header id="header">
-				<!-- <a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a> -->
+				 <!--<a href="#" class="image avatar"><img src="images/YC1a_001.png" alt="" /></a>-->
 				
 				<h1><a href="#" onclick="TurnOnMain()">Overview</a></h1>
-				<!--<h1><a href="#research" onclick="TurnOnMain()">Research</a></h1>-->
 				<h1><a href="#publications" onclick="TurnOnPublications()">Publications</a></h1>
 				<h1><a href="#media" onclick="TurnOnMain()">Media</a></h1>
+				<h1><a href="#demos" onclick="TurnOnDemos()">Demos & Videos</a></h1>
 				<h1><a href="#people" onclick="TurnOnMain()">People</a></h1>
 				<h1><a href="#acknowledgements" onclick="TurnOnMain()">Acknowledgements</a></h1>
 				<h1><a href="#contact" onclick="TurnOnMain()">Contact</a></h1>
@@ -70,8 +70,7 @@
 									<h3><font size="6">Memory and Navigation Laboratory </font></h3>
 									<h3><font size="6">Columbia University</font></h3>
 									<h3><font size="6">Joshua Jacobs, PhD.    </font><a href="documents/Jacobs_CV.pdf"><font size="5">(CV)</font></a><h3>
-									<img src="images/YC1a_001.png" alt="YC1a" style="width:255px;height:191px;">
-									<img src="images/firingRateMap.jpg" alt="Firing Rate Map" style="width:170px;height:191px;">
+									
 								</tr>
 							</table>
 							
@@ -79,7 +78,7 @@
 						
 						<div>
 	
-							<h3>Publications</h3>						
+							<h3>Select Publications</h3>						
 							
 							<table>
 								<tr>
@@ -108,43 +107,6 @@
 						</div>
 						
 					</section>
-
-				<!-- research -->
-					<!--<section id="research">
-						<h2>Research</h2> -->
-						<!-- FULL RESEARCH PAGE IN THE DIV ENTITLED: researchMain -->
-						<!--<p>The goal of our work is to characterize the neural signals that represent individual memories. To do this, we study brain recordings from epilepsy patients with implanted electrodes and examine how the recorded signals correspond to behavior in cognitive tasks. Our current work focuses on two areas: spatial and recognition memory. Using this approach, we have identified neural signals that represent specific memory information, including the individual locations in spatial memory and representations of individual verbal items in working memory.</p>
-						<ul class="actions">
-							<li><a href="#" class="button" onclick="TurnOnResearch()">Learn More</a></li>
-						</ul>
-					</section>-->
-
-				<!-- publications -->
-					<!--<section id="publications">-->
-						<!-- FULL PUBLICATIONS PAGE IN THE DIV ENTITLED: publicationsMain -->
-						<!--<h2>Publications</h2>
-						<h3><em>Select Publications</em></h3>
-						
-						<p> <b>Traveling Theta Waves in the Human Hippocampus</b> <br />
-						Zhang, H., Jacobs, J. (in press). <br />
-						<em>Journal of Neuroscience</em> (in press).[<a href="pubs/ZhangEtal15.pdf">pdf</a>] </p>
-
-						<p> <b>Repeating Spatial Activations in Human Entorhinal Cortex.</b> <br />
-						Miller, J.F., Fried, I., Suthana, N., Jacobs, J. (2015). <br />
-						<em>Current Biology</em>, April 2015, 1080-1085. [<a href="pubs/MillEtal15.pdf">pdf</a>] </p>
-						
-						<p> <b>Brain Computer Interface to Enhance Episodic Memory in Human Partipants</b> <br />
-						Burke, J.F., Merkow, M.B., Jacobs, J., Kahana, M.J., and Zaghloul, K.A. (2014). <br />
-						<em>Frontiers in Human Neuroscience, December 2014.</em> [<a href="pubs/BurkEtal14b.pdf">pdf</a>] </p>
-						
-						<p> <b>Proceedings of the Fifth International Workshop on Advances in Electrocorticography</b> <br />
-						Ritaccio, A., Brunner, P., Gunduz, A., Hermes, D., Hirsch, L., Jacobs, J., Kamada, K., Kastner, S., Knight, R., Lesser, R., Miller, K., Sejnowski, T., Worrell, G., Schalk, G. (2014). <br />
-						<em>Epilepsy & Behavior, 41, December 2014, 183-192.</em> [<a href="pubs/RitaEtal14.pdf">pdf</a>] </p>
-						
-						<ul class="actions">
-							<li><a href="#" class="button" onclick="TurnOnPublications()">View All Publications</a></li>
-						</ul>
-					</section>-->
 					
 					<!-- Media -->
 					<section id="media">
@@ -157,6 +119,7 @@
 							<li><a href="#" class="button" onclick="TurnOnMedia()">View All Media</a></li>
 						</ul>
 					</section>
+					
 
 				<!-- people -->
 					<section id="people">
@@ -291,14 +254,6 @@
 						</div>
 					</section>
 
-			</div>
-
-			<div id="researchMain" style="display: none;">
-				<section id="allResearch">
-					<h1>Research</h1>
-					<p>The goal of our work is to characterize the neural signals that represent individual memories. To do this, we study brain recordings from epilepsy patients with implanted electrodes and examine how the recorded signals correspond to behavior in cognitive tasks. Our current work focuses on two areas: spatial and recognition memory. Using this approach, we have identified neural signals that represent specific memory information, including the individual locations in spatial memory and representations of individual verbal items in working memory.</p>
-                    <h2><em> More coming soon! </em></h2>
-				</section>
 			</div>
 
 			<div id="publicationsMain" style="display: none;">
@@ -443,6 +398,14 @@
 					
 					
 					<h2><em> More coming soon! </em></h2>
+				</section>
+			</div>
+			
+			<div id="demosMain" style="display: none;">
+				<section id="allDemos">
+					<h1>Demos & Videos</h1>
+
+                    <h2><em> Coming soon! </em></h2>
 				</section>
 			</div>
 						

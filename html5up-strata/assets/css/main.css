@@ -2477,20 +2477,20 @@
 /* Header */
 
 	#header {
-		background-color: #1f1815;
+		background-color: #496381;
 		background-attachment: scroll,								fixed;
 		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-		background-position: top left,							top left;
-		background-repeat: repeat,								no-repeat;
-		background-size: auto,								auto 100%;
+		background-position: top left,							top right;
+		background-repeat: repeat,								repeat;
+		background-size: auto,								35% 100%; /* change image size here! */
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
-		padding: 8em 4em 0 0;
+		padding: 2em 2em 0 0;
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 35%;
+		width: 30%;
 	}
 
 		#header strong, #header b {
@@ -2502,7 +2502,7 @@
 		}
 
 		#header h1 {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(255, 255, 255, 0.9);
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
@@ -2567,7 +2567,7 @@
 		width: calc(100% - 35%);
 	}
 
-	#publicationsMain, #researchMain, #mediaMain {
+	#publicationsMain, #demosMain, #mediaMain {
 		margin-left: 29%;
 		max-width: 54em;
 		padding: 4em 4em 4em 4em;
@@ -2586,7 +2586,7 @@
 			padding: 4em 0 0 0;
 		}
 
-		#researchMain > section {
+		#demosMain > section {
 			border-top: solid 2px #efefef;
 			margin: 4em 0 0 0;
 			padding: 4em 0 0 0;
@@ -2610,7 +2610,7 @@
 				padding-top: 0;
 			}
 
-			#researchMain > section:first-child {
+			#demosMain > section:first-child {
 				border-top: 0;
 				margin-top: 0;
 				padding-top: 0;
@@ -2878,7 +2878,7 @@
 	}
 
 	body.is-touch #header {
-		background-attachment: scroll;
+		background-attachment: fixed;
 		background-size: auto, cover;
 	}
 
@@ -2922,7 +2922,7 @@
 		/* Header */
 
 			#header {
-				padding: 6em 3em 3em 3em;
+				padding: 2em 3em 3em 3em;
 				width: 28%;
 			}
 
@@ -2979,7 +2979,7 @@
 		/* Header */
 
 			#header {
-				background-attachment: scroll;
+				background-attachment: scroll; /* scroll (see grid cell image) vs. fixed (see tops of buildings) */
 				background-position: top left, center center;
 				background-size: auto,		cover;
 				left: auto;
@@ -3001,8 +3001,8 @@
 		/* Footer */
 
 			#footer {
-				background-attachment: scroll;
-				background-color: #1f1815;
+				background-attachment: scroll,						fixed;
+				background-color: #496381;
 				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
